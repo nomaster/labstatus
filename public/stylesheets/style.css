@@ -1,8 +1,77 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  text-align: center;
 }
+
+header {
+  background-color: rgba(255,255,255,0.9);
+  border-bottom: 1pt solid #ccc;
+  height: 24pt;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1, h2 {
+  font-size: 12pt;
+  font-weight: normal;
+  position: absolute;
+  text-transform: uppercase;
+  top: 5pt;
+}
+
+h1 {
+  left: 1em;
+}
+
+h2 {
+  right: 1em;
+}
+
+article {
+  color: #aaa;
+  font-size: 12pt;
+  margin-top: 30pt;
+}
+
+div.status {
+  border-radius: 5pt;
+  font-weight: bold;
+  height: 60pt;
+  margin: 5pt;
+  text-transform: uppercase;
+}
+
+div.status.closed {
+  background: #4f7076;
+}
+
+div.status.open {
+  background: #f8b426;
+}
+
+div.status div {
+  color: white;
+  position: relative;
+  top: 40%;
+}
+
+@media all and (min-width: 720px) {
+  body {
+    font-size: 200%;
+  }
+  div.status {
+    height: 200pt;
+    margin: 10pt auto;
+    width: 200pt;
+  }
+}
+
+

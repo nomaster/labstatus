@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  h1 GarageLab Status
-  p The Fablab is currently
-  h2= global.status
+
+  header
+    h1 GarageLab
+    h2 Status
+  article
+    p The Fablab is currently
+    div(class="status #{status}")
+      div= global.status
